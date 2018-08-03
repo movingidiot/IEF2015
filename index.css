@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+.headline{
+    width:100%;
+    background-color: darkgrey;
+    color:grey;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:2em;
+}
+
+.task-container{
+    width:100%;
+}
+
+.task-container>div{
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    height:500px;
+    display:inline-block;
+}
+
+.short-side{
+    width:30%;
+}
+
+.content-container{
+    width:35%;
+}
+
+.category-container{
+    height:470px;
+}
+
+.list-container{
+    height:470px;
+}

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body onload="initialize()">
+    <div class="headline">
+        <h2>GTD Tools</h2>
+    </div>
+    <div class="task-container">
+        <div class="category short-side">
+            <ul class="category-container"></ul>
+            <div class="add">
+                <a onclick="addCategory()">新增分类</a>
+            </div>
+        </div>
+        <div class="list short-side">
+            <div class="list-container">
+                <div class="labels">
+                    <button class="all-btn">所有</button>
+                    <button class="unfinished-btn">未完成</button>
+                    <button class="finished-btn">已完成</button>
+                </div>
+                <ul class="list-content"></ul>
+            </div>
+            <div class="add">
+                <a onclick="addTask()">新增任务</a>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="title">
+                <input oninput="inputChanged(event)" type="text" class="title-content">
+            </div>
+            <div class="outline">
+                <input oninput="inputChanged(event)" type="text" class="outline-content">
+            </div>
+            <div class="content">
+                <textarea oninput="inputChanged(event)" class="content-content"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
