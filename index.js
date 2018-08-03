@@ -105,9 +105,10 @@ class DocumentModifier{
     refreshList(category) {
         this.clearList();
         this.clearContent();
+        category.tasks = category.tasks.sort((a, b) => a.date.getTime() - b.date.getTime());
         category.tasks.forEach(item => {
             this.addTask(item);
-        });
+        })
     }
 
     /**
